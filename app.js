@@ -3,6 +3,8 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var cors = require('cors');
+app.use(cors());
 var port = process.env.PORT;
 var https_port = process.env.HTTPS_PORT;
 var db = process.env.MONGO_URL;
